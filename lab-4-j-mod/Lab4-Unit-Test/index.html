@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../../lab-2/Lab2-Modernize/">
+        <link rel="prev" href="../../lab-3-j-mod/Lab3-Upgrade-Java/">
       
+      
+        <link rel="next" href="../../lab-1-py/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>lab-3.バージョンアップ - watsonx Code Assistant で コード生成</title>
+        <title>lab-4.単体テスト - watsonx Code Assistant で コード生成</title>
       
     
     
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab3-java" class="md-skip">
+        <a href="#lab4-unit-test-generation" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -84,7 +86,7 @@
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href="../.." title="watsonx Code Assistant で コード生成" class="md-header__button md-logo" aria-label="watsonx Code Assistant で コード生成" data-md-component="logo">
       
-  <img src="../../images/ibm-blue-background.png" alt="logo">
+  <img src="../../images/ibm-blue-background.jpeg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              lab-3.バージョンアップ
+              lab-4.単体テスト
             
           </span>
         </div>
@@ -192,10 +194,28 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../lab-1/Lab1-Explain-Code/" class="md-tabs__link">
+        <a href="../../lab-1-j-mod/Lab1-Explain-Code/" class="md-tabs__link">
           
   
-  Workshop
+  ハンズオン-1.Java のモダナイズ機能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lab-1-py/" class="md-tabs__link">
+          
+  
+  ハンズオン-2.汎用コード生成(Python編)
 
         </a>
       </li>
@@ -227,7 +247,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="watsonx Code Assistant で コード生成" class="md-nav__button md-logo" aria-label="watsonx Code Assistant で コード生成" data-md-component="logo">
       
-  <img src="../../images/ibm-blue-background.png" alt="logo">
+  <img src="../../images/ibm-blue-background.jpeg" alt="logo">
 
     </a>
     watsonx Code Assistant で コード生成
@@ -330,7 +350,7 @@
             
   
   <span class="md-ellipsis">
-    Workshop
+    ハンズオン-1.Java のモダナイズ機能
   </span>
   
 
@@ -340,7 +360,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Workshop
+            ハンズオン-1.Java のモダナイズ機能
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -351,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab-1/Lab1-Explain-Code/" class="md-nav__link">
+      <a href="../../lab-1-j-mod/Lab1-Explain-Code/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -372,11 +392,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lab-2/Lab2-Modernize/" class="md-nav__link">
+      <a href="../../lab-2-j-mod/Lab2-Modernize/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Lab-2.モダナイズ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab-3-j-mod/Lab3-Upgrade-Java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    lab-3.バージョンアップ
   </span>
   
 
@@ -406,7 +447,7 @@
           
   
   <span class="md-ellipsis">
-    lab-3.バージョンアップ
+    lab-4.単体テスト
   </span>
   
 
@@ -417,7 +458,7 @@
         
   
   <span class="md-ellipsis">
-    lab-3.バージョンアップ
+    lab-4.単体テスト
   </span>
   
 
@@ -439,37 +480,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lab3" class="md-nav__link">
+  <a href="#lab4-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      Lab3 の範囲:
+      Lab4 covers:
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lab3 の範囲:">
+    <nav class="md-nav" aria-label="Lab4 covers:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-application" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Application の分析
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 修正の適用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. アプリの再構築
+      1. 指定されたスクリプトに対して単体テストを作成する
     </span>
   </a>
   
@@ -484,6 +507,114 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ハンズオン-2.汎用コード生成(Python編)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            ハンズオン-2.汎用コード生成(Python編)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab-1-py/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab-1.コード提案生成
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab-2-py/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab-2.コード補完
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab3-py/README.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lab-3.コマンド操作によるコード生成
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -523,37 +654,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lab3" class="md-nav__link">
+  <a href="#lab4-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      Lab3 の範囲:
+      Lab4 covers:
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lab3 の範囲:">
+    <nav class="md-nav" aria-label="Lab4 covers:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-application" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Application の分析
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 修正の適用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. アプリの再構築
+      1. 指定されたスクリプトに対して単体テストを作成する
     </span>
   </a>
   
@@ -579,33 +692,17 @@
                   
 
 
-<h1 id="lab3-java">Lab3: Java のバージョンのアップグレード</h1>
-<p>このページでは、Lab3を完了するための手順を順を追って説明しております。</p>
-<h2 id="lab3">Lab3 の範囲:</h2>
+<h1 id="lab4-unit-test-generation">Lab4: Unit Test Generation</h1>
+<p>このページでは、Lab4を完了するための手順を順を追って説明しております。</p>
+<h2 id="lab4-covers">Lab4 covers:</h2>
 <ul>
-<li>Java8からJava21へのアップグレード</li>
+<li>単体テストケースを生成する</li>
 </ul>
-<h3 id="1-application">1. Application の分析</h3>
-<p><code>modresorts-twas-j8</code> フォルダを右クリックし、<code>watsonx Code Assistant</code> - <code>Upgrade Java Version</code> を選択します。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_ja.png" /></p>
-<p><code>Upgrade</code>タブが表示されます。<code>Target</code>ドロップダウンで<code>Java 21 (LTS)</code>を選択し、<code>Build and analyze</code>をクリックします。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_build_analysis.png" /></p>
-<p>分析後、レポートには修正が必要なこのアプリケーションの問題点が示されます。そのうち3つは自動化でき、2つは手動での対応が必要です。まずは自動修正できる非互換を解消します。自動修正を行うには、<code>Run automated fixes</code> をクリックします（このプロセスには時間がかかる場合があります）。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_analysis_result.png" /></p>
-<h3 id="2">2. 修正の適用</h3>
-<p>アシスト付き修正については、<code>Instructions</code>のドロップダウンをクリックすると、修正の手順を確認できます。次に、図のように一つ目の問題のドロップダウンを展開します。この問題の修正方法については、下部にわかりやすい説明があります。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_assisted_fix.png" /></p>
-<p>次に、問題があり修正が必要なファイル名をクリックします。エディタウィンドウで、ここで定義されているクラス全体を選択し、<code>MBeanOperationInfo</code> コンストラクタを呼び出します。次に、生成 AI にヘルプを求めるために<code>Help me</code>をクリックします。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_help_me.png" /></p>
-<p>生成 AI とのチャットウィンドウが表示され、モデルに問い合わせできます。モデルは問題の修正に関する提案を行います。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_chat_suggestions.png" /></p>
-<p>ここでは、チャットからコピーしたコードを使用して、<code>DMbeanUtils.java</code>ファイルのコードを修正します。</p>
-<p>2つ目の問題は非推奨の警告なので、必ず修正が必要な項目ではありません。今回のラボでは、省略します。再構築後にアプリケーションに問題がの残っている場合は、同じ手順を実行して警告部分も修正できます。</p>
-<h3 id="3">3. アプリの再構築</h3>
-<p>すべての修正が適用されたので、アプリケーションに重大な問題が残っていないことを確認するために、<code>Rebuild and refresh</code>することができます。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_rebuild.png" /></p>
-<p>ブラウザで新しいアプリケーションを表示してみましょう。今度は、ロケーションモジュールが修正されていることが確認できるでしょう。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_location_fixed.png" /></p>
+<h3 id="1">1. 指定されたスクリプトに対して単体テストを作成する</h3>
+<p><code>/modresorts-twas-j8/src/main/java/com/acme/modres/mbean</code> フォルダ内の<code>DMBeanUtils.java</code>ファイルを右クリックし、<code>watsonx Code Assistant</code> - <code>Unit Test</code> を選択します。</p>
+<p><img alt="screenshot" src="../../images/VSC_unit_test.png" /></p>
+<p>チャット画面が開かれ、生成されたテストケースが表示されます。</p>
+<p><img alt="screenshot" src="../../images/VSC_unit_test_chat.png" /></p>
 
 
 
