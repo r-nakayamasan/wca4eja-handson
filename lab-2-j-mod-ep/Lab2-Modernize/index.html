@@ -904,11 +904,11 @@
 </ul>
 <h3 id="1">1. アプリの分析</h3>
 <p><code>modresorts-twas-j8</code> フォルダを右クリックし、<code>watsonx Code Assistant</code> - <code>Modernize to Liberty</code> を選択します。</p>
-<p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_ja.png" /></p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse_explain_code_ja.png" /></p>
 <p><code>Modernize</code> タブが表示されます。 <code>Upload migration bundle</code>をクリックし、サンプル・コードアセット内のファイル(<code>modresorts-twas-j8/migration-bundle/modresorts.ear_migrationBundle.zip</code>)を選択します。</p>
-<p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_migration_bundle.png" /></p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse_modernize_to_liberty_migration_bundle.png" /></p>
 <p>含めるファイルとして両方を選択し、<code>Proceed</code>ボタンをクリックします。</p>
-<p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_include_files.png" /></p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse_modernize_to_liberty_include_files.png" /></p>
 <p>分析後、レポートには修正が必要なこのアプリケーションの問題が表示されます。そのうち3つは自動化でき、1つは手動での対応が必要であることが確認できます。まずは自動修正できる非互換を解消します。自動修正を行うには、<code>Run automated fixes</code>をクリックします。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_analysis_result.png" /></p>
 <h3 id="2">2. 修正の適用</h3>
@@ -921,7 +921,6 @@
 <p>ここには2つのアクション項目が提示されます。
 - まず、チャットからコピーしたコードを使用して、<code>UpperServlet.java</code>ファイル内のコードを変更する必要があります。
 - 2つ目に、依存関係を反映させるために <code>pom.xml</code> を更新する必要があります。</p>
-<p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_pom_update.png" /></p>
 <h3 id="3">3. アプリケーションのリビルド</h3>
 <p>すべての修正が適用されました。<code>modresort</code>アプリケーションがまだ実行されている場合は、<code>TERMINAL</code>に移動して<code>CTRL+C</code>で停止してください。<code>Rebuild and refresh</code>（再構築して更新）して、アプリケーションに問題がなくなったことを確認できます。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_rebuild.png" /></p>

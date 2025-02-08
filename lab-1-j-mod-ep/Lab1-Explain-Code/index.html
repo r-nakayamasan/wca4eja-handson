@@ -604,18 +604,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-option" class="md-nav__link">
     <span class="md-ellipsis">
-      2. アプリケーションプロジェクトのビルド
+      2. ( Option )アプリケーションプロジェクトのビルド
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-liberty" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Liberty アプリを見てみる
+      3. プロジェクトのインポート
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-eclipse-liberty" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Eclipse に Liberty を導入する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. サンプルアプリを見てみる
     </span>
   </a>
   
@@ -868,18 +886,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-option" class="md-nav__link">
     <span class="md-ellipsis">
-      2. アプリケーションプロジェクトのビルド
+      2. ( Option )アプリケーションプロジェクトのビルド
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-liberty" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Liberty アプリを見てみる
+      3. プロジェクトのインポート
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-eclipse-liberty" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Eclipse に Liberty を導入する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. サンプルアプリを見てみる
     </span>
   </a>
   
@@ -924,7 +960,7 @@
 </ul>
 <h3 id="1">1. サンプル・コードアセットをダウンロードする</h3>
 <p><a href="https://github.com/r-nakayamasan/wca4eja-handson.git">GitHub リポジトリ</a>を任意の場所にGit cloneします。</p>
-<h3 id="2">2. アプリケーションプロジェクトのビルド</h3>
+<h3 id="2-option">2. ( Option )アプリケーションプロジェクトのビルド</h3>
 <ul>
 <li>ターミナルを開き、プロジェクトフォルダに移動後、<code>was_dependency</code>フォルダを開きます。</li>
 </ul>
@@ -936,12 +972,30 @@
 <p><img alt="screenshot" src="../../images/VSC_was_build.png" /></p>
 <p>Windowsユーザーの場合は、ビルドファイル <code>was_public.jar</code> および <code>was_public-9.0.0.pom</code> のフルパスを指定する必要があるかもしれません。</p>
 <p><img alt="screenshot" src="../../images/VSC-windows-build-app-full-path.png" /></p>
-<h3 id="3-liberty">3. Liberty アプリを見てみる</h3>
-<p>VSCodeマーケットプレイスからLibertyToolsをインストールすると、エクスプローラーにLiberty Dashboardセクションが追加されます。「Add project to Liberty Dashboard」をクリックし、<code>modresort-twas-j8</code>フォルダーへのパスを入力します（このプロジェクトで開いた状態で操作した場合は自動的に入力されます）。</p>
-<p><img alt="screenshot" src="../../images/VSC_LibertyTools_dashboard_1.png" /></p>
-<p>適切なプロジェクトを選択すると、<code>modresrots</code> アプリが表示されます。アプリを右クリックして起動します。</p>
-<p><img alt="screenshot" src="../../images/VSC_LibertyTools_dashboard_2.png" /></p>
-<p>VSCode は必要なパッケージを自動的にダウンロードします。ターミナルで確認できます。</p>
+<h3 id="3">3. プロジェクトのインポート</h3>
+<p>サンプルコードアセットを Eclipse にインポートします。
+ウェルカム画面から「プロジェクトをインポート」を選択し、「既存 Maven プロジェクト」を選択します。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-1.png" /></p>
+<p>「ルート・ディレクトリー」にサンプルコードアセットのルートディレクトリのパスを指定し、「完了」を選択します。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-2.png" /></p>
+<h3 id="3-eclipse-liberty">3. Eclipse に Liberty を導入する</h3>
+<p>Eclipse マーケットプレイスから LibertyTools をインストールし、Liberty を導入します。</p>
+<p>「新規サーバー」から IBM タブの「Liberty サーバー」を選択し、「次へ」を選択します。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-3.png" /></p>
+<p>Liberty ランタイム環境では、「名前」を任意で入力し、「アーカイブまたはリポジトリーからのインストール」、JRE はご自身の環境に合わせて選択します。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-4.png" /></p>
+<p>ランタイム環境のインストールでは、「宛先パスの入力」を任意のパスを指定し、インストール方法は「ibm.com から新規ランタイム環境をダウンロードしてインストール：」を選択します。Liberty ランタイムは「WAS Liberty with Java EE 7 Full Platform」を選択し、「次へ」をクリックします。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-5.png" /></p>
+<p>追加コンテンツのインストールは任意で選択し、「次へ」をクリックします。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-6.png" /></p>
+<p>その後、ライセンス契約の条件への同意や、サーバー名を指定を行い新規サーバーの設定が完了します。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-7.png" /></p>
+<h3 id="4">4. サンプルアプリを見てみる</h3>
+<p>サンプルプロジェクトを選択し、「実行」から「1. サーバーで実行」を選択します。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-8.png" /></p>
+<p>サーバーは先ほどのステップで作成した「localhost の Liberty サーバー」を選択し、「完了」を選択します。</p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse-java-mod-9.png" /></p>
+<p>必要なパッケージは自動的にダウンロードします。ターミナルで確認できます。</p>
 <p><img alt="screenshot" src="../../images/VSC_Liberty_App_start.png" /></p>
 <p>アプリが起動したら、URL（基本的には <code>http://localhost:9080/resorts/</code>）を取得し、ブラウザで開くことでウェブアプリを確認できます。</p>
 <p><strong>[IMPORTANT]</strong> このアプリケーションはJava8でWebSphere用に構築されている一方で、Liberty in Java21を使用して実行しているため、アプリケーションは正常に起動したものの、<strong>このランタイムの移行と Java バージョンのアップグレードによりエラーが発生した箇所が2箇所あります</strong>。</p>
@@ -953,11 +1007,11 @@
 <p>これらのエラーを、後のラボで<strong>修正</strong>していきます。</p>
 <h3 id="4-wca">4. wCA によるアプリケーションの解説の生成</h3>
 <p>プロジェクト全体を理解するには、<code>modresorts-twas-j8</code> フォルダを右クリックして、<code>watsonx Code Assistant</code> - <code>Explain Application</code> を選択します。</p>
-<p><img alt="screenshot" src="../../images/VSC_explain_code_ja.png" /></p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse_explain_code_ja.png" /></p>
 <p>VSCode が処理に時間がかかると通知します。<code>Proceed with code analysis</code>をクリックします。</p>
-<p><img alt="screenshot" src="../../images/VSC_explain_code_proceed.png" /></p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse_explain_code_proceed.png" /></p>
 <p>分析には1～2分かかる場合があります。右下にプロンプトが表示されます。</p>
-<p><img alt="screenshot" src="../../images/VSC_explain_code_finish.png" /></p>
+<p><img alt="screenshot" src="../../images/eclipse/eclipse_explain_code_finish.png" /></p>
 <p>ここまで進めると、レポートを開き、詳細を読み進めることができます。</p>
 <p><img alt="screenshot" src="../../images/VSC_explain_code_report.png" /></p>
 
