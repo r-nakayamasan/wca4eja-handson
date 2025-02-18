@@ -1156,7 +1156,7 @@
 </span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span>User-&gt;&gt;System:<span class="w"> </span>Choose<span class="w"> </span>an<span class="w"> </span>operation
 </span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span>System-&gt;&gt;User:<span class="w"> </span>Perform<span class="w"> </span>the<span class="w"> </span>operation<span class="w"> </span>based<span class="w"> </span>on<span class="w"> </span>user<span class="w"> </span>input
 </span></code></pre></div>
-<pre class="mermaid"><code>sequenceDiagram
+<div class="mermaid">sequenceDiagram
     participant User
     participant System
     User-&gt;&gt;System: Enter the number of integers
@@ -1164,7 +1164,7 @@
     User-&gt;&gt;System: Enter integers
     System-&gt;&gt;User: Prompt to choose an operation
     User-&gt;&gt;System: Choose an operation
-    System-&gt;&gt;User: Perform the operation based on user input</code></pre>
+    System-&gt;&gt;User: Perform the operation based on user input</div>
 <h3 id="5">5. クラス図の生成</h3>
 <p>チャットを使って、ソースコードからクラス図を生成してみます。</p>
 <p>以下のプロンプトを入力します。</p>
@@ -1188,14 +1188,14 @@
 </span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span>+sort<span class="o">(</span>int<span class="o">[])</span><span class="w"> </span>void
 </span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="o">}</span>
 </span></code></pre></div>
-<pre class="mermaid"><code>classDiagram
+<div class="mermaid">classDiagram
 class sample{
     -int[] a
     +sample(int[])
     +calculate(int[]) void
     +print(int[]) void
     +sort(int[]) void
-}</code></pre>
+}</div>
 <h3 id="6-java-interface">6. Java Interfaceの生成</h3>
 <p>チャットを使って、Java Interfaceを生成してみます。</p>
 <p>以下のプロンプトを入力します。</p>
