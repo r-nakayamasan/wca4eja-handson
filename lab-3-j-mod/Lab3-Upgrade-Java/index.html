@@ -904,15 +904,15 @@
 </ul>
 <h3 id="1">1. アプリの分析</h3>
 <p><code>modresorts-twas-j8</code> フォルダを右クリックし、<code>watsonx Code Assistant</code> - <code>Upgrade Java Version</code> を選択します。</p>
-<p><img alt="screenshot" src="../../images/VSC_upgrade_java_ja.png" /></p>
+<p><img alt="screenshot" src="../../images/VSC_explain_code_ja.png" /></p>
 <p><code>Upgrade</code>タブが表示されます。<code>Target</code>ドロップダウンで<code>Java 21 (LTS)</code>を選択し、<code>Build and analyze</code>をクリックします。</p>
 <p><img alt="screenshot" src="../../images/VSC_upgrade_java_build_analysis.png" /></p>
 <p>分析後、レポートには修正が必要なこのアプリケーションの問題点が示されます。そのうち3つは自動化でき、2つは手動での対応が必要です。まずは自動修正できる非互換を解消します。自動修正を行うには、<code>Run automated fixes</code> をクリックします（このプロセスには時間がかかる場合があります）。</p>
 <p><img alt="screenshot" src="../../images/VSC_upgrade_java_analysis_result.png" /></p>
 <h3 id="2">2. 修正の適用</h3>
-<p>アシスト付き修正については、<code>Instructions</code>のドロップダウンをクリックすると、修正の手順を確認できます。次に、図のように一つ目の問題のドロップダウンを展開します。この問題の修正方法については、下部にわかりやすい説明があります。</p>
+<p>アシスト付き修正については、<code>Instructions</code>のドロップダウンをクリックすると、修正の手順を確認できます。次に、図のように一つ目の問題のドロップダウンを展開します。展開されたテキストは、この問題の修正方法について記載されています。</p>
 <p><img alt="screenshot" src="../../images/VSC_upgrade_java_assisted_fix.png" /></p>
-<p>次に、問題があり修正が必要なファイル名をクリックします。エディタウィンドウで、ここで定義されているクラス全体を選択し、<code>MBeanOperationInfo</code> コンストラクタを呼び出します。次に、生成 AI にヘルプを求めるために<code>Help me</code>をクリックします。</p>
+<p>次に、修正が必要なファイル名のパスをクリックします。エディタウィンドウで、ここで定義されているクラス全体を選択し、<code>MBeanOperationInfo</code> コンストラクタを呼び出します。次に、生成 AI にヘルプを求めるために<code>Help me</code>をクリックします。</p>
 <p><img alt="screenshot" src="../../images/VSC_upgrade_java_help_me.png" /></p>
 <p>生成 AI とのチャットウィンドウが表示され、モデルに問い合わせできます。モデルは問題の修正に関する提案を行います。</p>
 <p><img alt="screenshot" src="../../images/VSC_upgrade_java_chat_suggestions.png" /></p>
@@ -921,7 +921,7 @@
 <h3 id="3">3. アプリの再構築</h3>
 <p>すべての修正が適用されたので、アプリケーションに重大な問題が残っていないことを確認するために、<code>Rebuild and refresh</code>することができます。</p>
 <p><img alt="screenshot" src="../../images/VSC_upgrade_java_rebuild.png" /></p>
-<p>ブラウザで新しいアプリケーションを表示してみましょう。今度は、ロケーションモジュールが修正されていることが確認できるでしょう。</p>
+<p>ブラウザで新しいアプリケーションを表示してみましょう。今度は、ロケーションモジュールが修正されていることが確認できます。</p>
 <p><img alt="screenshot" src="../../images/VSC_upgrade_java_location_fixed.png" /></p>
 
 

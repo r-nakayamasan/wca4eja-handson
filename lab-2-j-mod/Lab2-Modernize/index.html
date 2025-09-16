@@ -904,17 +904,29 @@
 </ul>
 <h3 id="1">1. アプリの分析</h3>
 <p><code>modresorts-twas-j8</code> フォルダを右クリックし、<code>watsonx Code Assistant</code> - <code>Modernize to Liberty</code> を選択します。</p>
-<p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_ja.png" /></p>
-<p><code>Modernize</code> タブが表示されます。 <code>Upload migration bundle</code>をクリックし、サンプル・コードアセット内のファイル(<code>modresorts-twas-j8/migration-bundle/modresorts.ear_migrationBundle.zip</code>)を選択します。</p>
+<p><img alt="screenshot" src="../../images/VSC_explain_code_ja.png" /></p>
+<p><code>Modernize</code> タブが表示されます。 <code>Analyze Application</code>のタブをクリックし、展開します。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_migration_bundle.png" /></p>
-<p>含めるファイルとして両方を選択し、<code>Proceed</code>ボタンをクリックします。</p>
+<p>Javaプロジェクトの非互換の調査を実施します。<code>Start analyze</code>のボタンをクリックします。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_include_files.png" /></p>
-<p>分析後、レポートには修正が必要なこのアプリケーションの問題が表示されます。そのうち3つは自動化でき、1つは手動での対応が必要であることが確認できます。まずは自動修正できる非互換を解消します。自動修正を行うには、<code>Run automated fixes</code>をクリックします。</p>
+<p>現行の実行環境と、移行したい実行環境を選択します。</p>
+<p>Application severのSorceタブは<code>WebSphere Application Server traditional V9.0</code>、Targetタブは<code>Opne Liberty</code>を選択します。</p>
+<p>Java SE versionのSourceタブは<code>IBM Java 8</code>、Targetタブは<code>IBM Java 8</code>を選択します。(ここではJavaのバージョンアップは行いません。)</p>
+<p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_setting.png" /></p>
+<p>選択後に<code>Build and Analyze</code>ボタンをクリックして分析を開始します。分析には数分かかります。</p>
+<p>分析終了後、レポートには修正が必要なこのアプリケーションの問題が表示されます。</p>
+<p>問題点はwatsonx Code Assistantの提案する解決方法に応じて別で表示されます。まずは自動修正できる非互換を解消します。自動修正を行うには、<code>Run automated fixes</code>をクリックします。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_analysis_result.png" /></p>
+<p>数分待つと、修正が完了します。完了後は非互換リストの先頭のバッジが緑色になります。</p>
+<p><code>Rebuild and refresh</code>ボタンをクリックし、再度分析を実行します。</p>
+<p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_analysis_rebuild.png" /></p>
+<p>非互換のリストからAutomated fixesの非互換が消えたことが確認できます。</p>
+<p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_analysis_refresh.png" /></p>
 <h3 id="2">2. 修正の適用</h3>
 <p>アシスト付きの修正については、<code>Instructions</code>のドロップダウンをクリックすると、修正の手順を確認できます。次に、問題のドロップダウンを展開します。問題の修正方法については、下部にわかりやすい説明があります。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_assisted_fix.png" /></p>
-<p>次に、問題があり修正が必要なファイル名をクリックします。エディタウィンドウで、<code>ResponseUtils.encodeDataString()</code> メソッドを使用している、ここで定義されているクラス全体をハイライトして選択します。次に、生成 AI にヘルプを求めるために<code>Help me</code>をクリックします。</p>
+<p>次に、修正が必要なファイルのパスをクリックします。</p>
+<p>エディタウィンドウで、<code>ResponseUtils.encodeDataString()</code> メソッドを使用している、ここで定義されているクラス全体をハイライトして選択します。次に、生成 AI にヘルプを求めるために<code>Help me</code>をクリックします。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_help_me.png" /></p>
 <p>生成 AI とのチャットウィンドウが表示され、モデルに問い合わせできます。モデルは問題の修正に関する提案を行います。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_chat_suggestions.png" /></p>
@@ -925,8 +937,9 @@
 <h3 id="3">3. アプリケーションのリビルド</h3>
 <p>すべての修正が適用されました。<code>modresort</code>アプリケーションがまだ実行されている場合は、<code>TERMINAL</code>に移動して<code>CTRL+C</code>で停止してください。<code>Rebuild and refresh</code>（再構築して更新）して、アプリケーションに問題がなくなったことを確認できます。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_rebuild.png" /></p>
-<p>ブラウザで修正したアプリケーションを表示してみましょう。今度は<code>Logout</code>ボタンが修正されていることが分かるでしょう。</p>
+<p>ブラウザで修正したアプリケーションを表示してみましょう。今度は<code>Logout</code>ボタンが修正されていることが分かります。</p>
 <p><img alt="screenshot" src="../../images/VSC_modernize_to_liberty_logout_fixed.png" /></p>
+<p>以上。</p>
 
 
 
